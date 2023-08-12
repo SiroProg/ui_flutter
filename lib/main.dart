@@ -5,158 +5,72 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Column(
-          children: [
-            Row(
-              children: [
-                Column(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                          color: Colors.blue.shade300,
-                          borderRadius: BorderRadius.all(Radius.circular(10))),
-                      width: 200,
-                      height: 200,
-                      margin: EdgeInsets.all(10),
-                    ),
-                    Row(
-                      children: [
-                        for (int i = 0; i < 2; i++)
-                          Container(
-                            decoration: BoxDecoration(
-                                color: Colors.blue.shade300,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(10))),
-                            width: 90,
-                            height: 80,
-                            margin: EdgeInsets.all(10),
-                          )
-                      ],
-                    ),
-                  ],
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                margin: EdgeInsets.all(5),
+                alignment: Alignment.center,
+                width: 100,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: Colors.deepOrangeAccent.shade100,
+                  shape: BoxShape.circle,
                 ),
-                Row(
-                  children: [
-                    Column(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                              color: Colors.blue.shade300,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10))),
-                          width: 100,
-                          height: 100,
-                          margin: EdgeInsets.all(10),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                              color: Colors.blue.shade300,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10))),
-                          width: 100,
-                          height: 180,
-                          margin: EdgeInsets.all(10),
-                        ),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        for (int i = 0; i < 3; i++)
-                          Container(
-                            decoration: BoxDecoration(
-                                color: Colors.blue.shade300,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(10))),
-                            width: 100,
-                            height: 87,
-                            margin: EdgeInsets.all(10),
-                          ),
-                      ],
-                    ),
-                  ],
-                )
-              ],
-            ),
-            Row(
-              children: [
-                Column(
-                  children: [
-                    Row(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                              color: Colors.blue.shade300,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10))),
-                          width: 200,
-                          height: 90,
-                          margin: EdgeInsets.all(10),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                              color: Colors.blue.shade300,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10))),
-                          width: 100,
-                          height: 90,
-                          margin: EdgeInsets.all(10),
-                        )
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            for (int i = 0; i < 2; i++)
-                              Container(
-                                margin: EdgeInsets.all(10),
-                                decoration: BoxDecoration(
-                                    color: Colors.blue.shade300,
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(10))),
-                                width: 90,
-                                height: 90,
-                              )
-                          ],
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                              color: Colors.blue.shade300,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10))),
-                          width: 210,
-                          height: 200,
-                          margin: EdgeInsets.all(10),
-                        ),
-                      ],
-                    ),
-                  ],
+                child: Icon(
+                  Icons.person,
+                  color: Color.fromARGB(255, 226, 102, 64),
+                  size: 50,
                 ),
-                Column(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                          color: Colors.blue.shade300,
-                          borderRadius: BorderRadius.all(Radius.circular(10))),
-                      width: 100,
-                      height: 200,
-                      margin: EdgeInsets.all(10),
-                    ),
-                    Container(
-                      decoration: BoxDecoration(
-                          color: Colors.blue.shade300,
-                          borderRadius: BorderRadius.all(Radius.circular(10))),
-                      width: 100,
-                      height: 90,
-                      margin: EdgeInsets.all(10),
-                    ),
-                  ],
+              ),
+              Container(
+                margin: EdgeInsets.all(5),
+                alignment: Alignment.center,
+                width: 100,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(215, 0, 217, 255),
+                  shape: BoxShape.circle,
                 ),
-              ],
-            )
-          ],
+                child: Icon(
+                  Icons.person,
+                  size: 50,
+                  color: Color.fromARGB(255, 14, 92, 133),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.all(5),
+                alignment: Alignment.center,
+                width: 100,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 255, 177, 100),
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(
+                  Icons.person,
+                  color: Color.fromARGB(255, 194, 138, 7),
+                  size: 50,
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.all(5),
+                alignment: Alignment.center,
+                width: 100,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 185, 113, 199),
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(
+                  Icons.person,
+                  size: 50,
+                  color: Color.fromARGB(255, 154, 15, 172),
+                ),
+              )
+            ],
+          ),
         ),
       ),
     ),
