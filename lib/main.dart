@@ -5,46 +5,36 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Container(
-          color: Colors.black12,
-          height: 170,
-          width: 1000 * 1000,
-          child: Container(
-            margin: EdgeInsets.all(15),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  width: 90,
-                  height: 90,
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(66, 167, 150, 150),
-                    shape: BoxShape.circle,
-                  ),
-                  child: Icon(
-                    Icons.person,
-                    color: Color.fromARGB(255, 140, 78, 248),
-                    size: 30,
-                  ),
-                ),
-                Text(
-                  'Username',
-                  style: TextStyle(
-                    color: Colors.black87,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 30,
-                  ),
-                ),
-                Text(
-                  'email',
-                  style: TextStyle(
-                    color: Colors.black87,
-                    fontSize: 14,
-                  ),
-                ),
-              ],
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Container(
+              height: 300,
             ),
-          ),
+            Image(
+              width: 60,
+              height: 60,
+              image: NetworkImage(
+                  'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png'),
+            ),
+            Container(
+              height: 270,
+            ),
+            Center(child: Text('from')),
+            Center(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image(
+                    width: 30,
+                    height: 30,
+                      image: NetworkImage(
+                          'https://upload.wikimedia.org/wikipedia/commons/4/4c/Instagram-infinity.png')),
+                  Text('Meta', style: TextStyle(color: const Color.fromARGB(255, 152, 18, 63)),)
+                ],
+              ),
+            )
+          ],
         ),
       ),
     ),
