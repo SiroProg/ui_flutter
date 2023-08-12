@@ -18,22 +18,42 @@ void main() {
               ),
             ),
           ),
-          Expanded(
-            flex: 1,
-            child: Container(
-              margin: EdgeInsets.only(
-                left: 10,
-                bottom: 10,
-                right: 10,
+          Row(
+            children: [
+              Expanded(
+                flex: 1,
+                child: Container(
+                  margin: EdgeInsets.only(
+                    left: 10,
+                    bottom: 10,
+                    right: 10,
+                  ),
+                  height: 200,
+                  width: 200,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    color: Colors.blue.shade800,
+                  ),
+                ),
               ),
-              height: 100,
-              width: 200,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(10)),
-                color: Colors.blue.shade800,
-              ),
-            ),
-          )
+              Expanded(
+                flex: 1,
+                child: Container(
+                  margin: EdgeInsets.only(
+                    left: 10,
+                    bottom: 10,
+                    right: 10,
+                  ),
+                  height: 200,
+                  width: 200,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    color: Colors.blue.shade800,
+                  ),
+                ),
+              )
+            ],
+          ),
         ]),
       ),
     ),
