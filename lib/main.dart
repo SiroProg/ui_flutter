@@ -5,35 +5,22 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
-              height: 300,
-            ),
-            Image(
-              width: 60,
-              height: 60,
-              image: NetworkImage(
-                  'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png'),
+              height: 200,
             ),
             Container(
-              height: 270,
-            ),
-            Center(child: Text('from')),
-            Center(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image(
-                    width: 30,
-                    height: 30,
-                      image: NetworkImage(
-                          'https://upload.wikimedia.org/wikipedia/commons/4/4c/Instagram-infinity.png')),
-                  Text('Meta', style: TextStyle(color: const Color.fromARGB(255, 152, 18, 63)),)
-                ],
+              child: Image(
+                height: 100,
+                width: 100,
+                image: NetworkImage(
+                    'https://static-00.iconduck.com/assets.00/tik-tok-icon-2048x2048-mmnsrcbe.png'),
               ),
-            )
+            ),
+            Center(child: Text('TikTok', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 30),))
           ],
         ),
       ),
