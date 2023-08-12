@@ -7,11 +7,10 @@ void main() {
       home: Scaffold(
         body: Center(
           child: Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+            child: Stack(
               children: [
                 Container(
-                  margin: EdgeInsets.all(5),
+                  margin: EdgeInsets.all(10),
                   alignment: Alignment.center,
                   width: 90,
                   height: 90,
@@ -26,7 +25,7 @@ void main() {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.all(5),
+                  margin: EdgeInsets.only(left: 60, top: 10),
                   alignment: Alignment.center,
                   width: 90,
                   height: 90,
@@ -41,7 +40,7 @@ void main() {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.all(5),
+                  margin: EdgeInsets.only(left: 120, top: 10),
                   alignment: Alignment.center,
                   width: 90,
                   height: 90,
@@ -56,7 +55,7 @@ void main() {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.all(5),
+                  margin: EdgeInsets.only(left: 180, top: 10),
                   alignment: Alignment.center,
                   width: 90,
                   height: 90,
