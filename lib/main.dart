@@ -25,7 +25,7 @@ void main() {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(left: 60, top: 10),
+                  margin: EdgeInsets.only(left: 10, top: 70),
                   alignment: Alignment.center,
                   width: 90,
                   height: 90,
@@ -40,7 +40,7 @@ void main() {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(left: 120, top: 10),
+                  margin: EdgeInsets.only(left: 10, top: 130),
                   alignment: Alignment.center,
                   width: 90,
                   height: 90,
@@ -55,7 +55,7 @@ void main() {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(left: 180, top: 10),
+                  margin: EdgeInsets.only(left: 10, top: 190),
                   alignment: Alignment.center,
                   width: 90,
                   height: 90,
