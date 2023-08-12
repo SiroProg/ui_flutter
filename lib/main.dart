@@ -5,43 +5,75 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Row(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        body: Column(
           children: [
-            for (int i = 0; i < 2; i++)
-              Column(
-                children: [
-                  Expanded(
-                    flex: i % 2 == 0 ? 2 : 1,
-                    child: Container(
+            Row(
+              children: [
+                Container(
+                  width: 330,
+                  height: 320,
+                  decoration: BoxDecoration(
+                      color: Colors.blue.shade700,
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                  margin: EdgeInsets.only(top: 10, right: 10, left: 10),
+                ),
+                Column(
+                  children: [
+                    Container(
+                      width: 100,
+                      height: 100,
+                      decoration: BoxDecoration(
+                          color: Colors.blue.shade700,
+                          borderRadius: BorderRadius.all(Radius.circular(10))),
+                      margin: EdgeInsets.only(top: 10, right: 10),
+                    ),
+                    Container(
+                      width: 100,
+                      height: 210,
+                      decoration: BoxDecoration(
+                          color: Colors.blue.shade700,
+                          borderRadius: BorderRadius.all(Radius.circular(10))),
+                      margin: EdgeInsets.only(top: 10, right: 10),
+                    ),
+                  ],
+                )
+              ],
+            ),
+            Row(
+              children: [
+                Column(
+                  children: [
+                    Container(
+                      width: 100,
+                      height: 100,
+                      decoration: BoxDecoration(
+                          color: Colors.blue.shade700,
+                          borderRadius: BorderRadius.all(Radius.circular(10))),
                       margin: EdgeInsets.only(
                         top: 10,
                         left: 10,
-                        right: 10,
-                      ),
-                      height: 200,
-                      width: 200,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
-                        color: Colors.blue.shade800,
                       ),
                     ),
-                  ),
-                  Expanded(
-                    flex: i % 2 != 0 ? 2 : 1,
-                    child: Container(
-                      margin: EdgeInsets.all(10),
-                      height: 200,
-                      width: 200,
+                    Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
-                        color: Colors.blue.shade800,
-                      ),
+                          color: Colors.blue.shade700,
+                          borderRadius: BorderRadius.all(Radius.circular(10))),
+                      width: 100,
+                      height: 220,
+                      margin: EdgeInsets.only(top: 10, left: 10, bottom: 10),
                     ),
-                  ),
-                ],
-              ),
+                  ],
+                ),
+                Container(
+                  width: 330,
+                  height: 330,
+                  decoration: BoxDecoration(
+                      color: Colors.blue.shade700,
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                  margin: EdgeInsets.all(10),
+                ),
+              ],
+            )
           ],
         ),
       ),
