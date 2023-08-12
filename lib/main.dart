@@ -5,12 +5,12 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Column(
+        body: Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            for (int i = 0; i < 3; i++)
-              Row(
+            for (int i = 0; i < 2; i++)
+              Column(
                 children: [
                   Expanded(
                     flex: i % 2 == 0 ? 2 : 1,
@@ -31,11 +31,7 @@ void main() {
                   Expanded(
                     flex: i % 2 != 0 ? 2 : 1,
                     child: Container(
-                      margin: EdgeInsets.only(
-                        top: 10,
-                        left: 10,
-                        right: 10,
-                      ),
+                      margin: EdgeInsets.all(10),
                       height: 200,
                       width: 200,
                       decoration: BoxDecoration(
