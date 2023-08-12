@@ -5,50 +5,46 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Center(
-            child: Text(
-              'AppName',
-              style: TextStyle(color: Colors.black),
+        body: Container(
+          color: Colors.black12,
+          height: 170,
+          width: 1000 * 1000,
+          child: Container(
+            margin: EdgeInsets.all(15),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  width: 90,
+                  height: 90,
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(66, 167, 150, 150),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(
+                    Icons.person,
+                    color: Color.fromARGB(255, 140, 78, 248),
+                    size: 30,
+                  ),
+                ),
+                Text(
+                  'Username',
+                  style: TextStyle(
+                    color: Colors.black87,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30,
+                  ),
+                ),
+                Text(
+                  'email',
+                  style: TextStyle(
+                    color: Colors.black87,
+                    fontSize: 14,
+                  ),
+                ),
+              ],
             ),
           ),
-          backgroundColor: Colors.white,
-        ),
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            for (int i = 0; i < 5; i++)
-              Container(
-                child: Row(
-                  children: [
-                    Container(
-                      child: Icon(
-                        Icons.image,
-                        size: 50,
-                      ),
-                      color: Colors.black26,
-                      width: 100,
-                      height: 100,
-                    ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          '   Restaurent Name',
-                          style: TextStyle(fontWeight: FontWeight.w900),
-                        ),
-                        Text('    Address'),
-                      ],
-                    )
-                  ],
-                ),
-                height: 100,
-                margin: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                    border: Border.all(color: Colors.black26, width: 1)),
-              ),
-          ],
         ),
       ),
     ),
